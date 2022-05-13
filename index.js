@@ -30,15 +30,15 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+// server.listen(PORT, () => {
+//   console.log(`Listening on port ${PORT}`);
+// });
 
 app.listen(4000, () => {
   console.log(`Listening on port ${4000}`);
 })
 
-app.get('/',(req,res) => {
+app.get('/api',(req,res) => {
   res.send({
     "message": "running successfully"
   })
